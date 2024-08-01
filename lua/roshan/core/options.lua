@@ -4,7 +4,7 @@ local opt = vim.opt
 opt.number = true
 opt.relativenumber = true
 
-opt.guifont = "JetBrainsMono Nerd Font Mono:h13:semibold"
+-- opt.guifont = "Jetbrains Mono"
 
 -- tabs & indentation
 opt.tabstop = 2

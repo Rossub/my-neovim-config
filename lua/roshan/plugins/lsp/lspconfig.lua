@@ -97,6 +97,19 @@ return {
 			},
 		})
 
+		lspconfig["sqlls"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+			filetypes = "sql",
+			settings = {
+				sql = {
+					formatting = {
+						provider = "sql-formatter",
+					},
+				},
+			},
+		})
+
 		-- configure typescript server with plugin
 		lspconfig["tsserver"].setup({
 			capabilities = capabilities,
